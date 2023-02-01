@@ -147,7 +147,7 @@ public class IdleGame : MonoBehaviour
 
         coinsPerSec = ((autoClick1Power * autoClickUpgLvl) + (autoClick2Power * autoClickUpg2Lvl)) + (autoClickerGemPower * autoClickerGemLvl) * boost;
         coinsPerSecText.text = coinsPerSec.ToString("F2") + " Coins/Sec";
-        autoClickerGemText.text = "+" + (autoClickerGemPower * boost).ToString("F2") + "\nCost: " + autoClickerGemCost.ToString("F0") + "\n Lvl: " + autoClickerGemLvl;
+        autoClickerGemText.text = "+" + (autoClickerGemPower * boost).ToString("F2") + "C/sec\nCost: " + autoClickerGemCost.ToString("F0") + "\n Lvl: " + autoClickerGemLvl;
         
         
         if (clickValue > 10000)
