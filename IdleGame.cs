@@ -89,9 +89,10 @@ public class IdleGame : MonoBehaviour
         autoClickUpgLvl = PlayerPrefs.GetInt("autoClickUpgLvl", 0);
         autoClickUpg2Lvl = PlayerPrefs.GetInt("autoClickUpg2Lvl", 0);
 
-        gems = double.Parse(PlayerPrefs.GetString("gemShop", "0"));
-        boost = double.Parse(PlayerPrefs.GetString("boost", "0"));
+        gems = double.Parse(PlayerPrefs.GetString("gems", "0"));
+        boost = double.Parse(PlayerPrefs.GetString("boost", "1"));
         toGetGems = double.Parse(PlayerPrefs.GetString("toGetGems", "0"));
+        gemShop = double.Parse(PlayerPrefs.GetString("gemShop", "0"));
         
         gemFirstBuy = PlayerPrefs.GetInt("gemFirstBuy")==1?true:false;
 }
@@ -127,13 +128,13 @@ public class IdleGame : MonoBehaviour
     }
 
 
-    /*
+    
     [MenuItem("Window/Delete PlayerPrefs (All)")]                                          //Delete prefs
     static void DeleteAllPlayerPrefs()
     {
         PlayerPrefs.DeleteAll();
     }
-    */
+    
 
 
 
